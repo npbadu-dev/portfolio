@@ -266,7 +266,7 @@ html {
 /* SKILL SECTION */
 /* ******************************* */
 
-.skill-section{
+.skill-section {
   border-top: 1px solid #ccc;
 }
 .skill-icon {
@@ -283,8 +283,8 @@ html {
   white-space: nowrap;
   margin: 20px 0;
 }
-.skill-box p{
-  color:#fff;
+.skill-box p {
+  color: #fff;
   font: size 24px;
   font-weight: 600;
 }
@@ -358,4 +358,161 @@ html {
 }
 .skills-section {
   overflow: hidden;
+}
+
+/* =========================
+   Base Styles (Desktop)
+========================= */
+
+.skill-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.skills-row {
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  gap: 30px;
+  animation: scrollLeft 25s linear infinite;
+}
+
+.skills-row.reverse .skills-track {
+  animation: scrollRight 25s linear infinite;
+}
+
+.skill-box {
+  min-width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-8px);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.skill-box p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* =========================
+   Animation
+========================= */
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* =========================
+   Tablet (≤ 1024px)
+========================= */
+
+@media (max-width: 1024px) {
+  .skill-box {
+    min-width: 130px;
+    height: 130px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-box p {
+    font-size: 14px;
+  }
+
+  .skills-track {
+    gap: 20px;
+  }
+}
+
+/* =========================
+   Mobile (≤ 768px)
+========================= */
+
+@media (max-width: 768px) {
+  .skill-section {
+    margin-top: 60px;
+  }
+
+  .skills-section {
+    gap: 25px;
+  }
+
+  .skill-box {
+    min-width: 110px;
+    height: 110px;
+    border-radius: 12px;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-box p {
+    font-size: 13px;
+  }
+
+  .skills-track {
+    gap: 15px;
+    animation-duration: 18s; /* faster on mobile */
+  }
+}
+
+/* =========================
+   Small Mobile (≤ 480px)
+========================= */
+
+@media (max-width: 480px) {
+  .skill-box {
+    min-width: 95px;
+    height: 95px;
+  }
+
+  .skill-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .skill-box p {
+    font-size: 12px;
+  }
 }
