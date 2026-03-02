@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitesh Prasad Badu | Personal Portfolio</title>
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/about.css" />
+  </head>
+  <body>
+    <div class="main-container bg-[#F8FAFC]">
+      <header class="nav-header sm:block hidden">
+        <nav class="nav-container py-1.5">
+          <ul class="navigaiton-list flex items-center justify-evenly">
+            <li>
+              <a href="#"
+                ><img
+                  src="assets/logo.png"
+                  alt="profile logo"
+                  class="logo-img nav-link"
+              /></a>
+            </li>
+            <li><a href="#" class="nav-link inline-block">Home</a></li>
+            <li><a href="#about" class="nav-link inline-block">About</a></li>
+            <li>
+              <a href="#projects" class="nav-link inline-block">Projects</a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-link inline-block">Skills</a>
+            </li>
+            <li><a href="#cta" class="nav-link inline-block">Contact</a></li>
+            <li>
+              <button id="dark-mode-toggle" class="cursor-pointer nav-link">
+                🌙
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div
+        class="hero-section relative grid sm:h-[70vh] sm:grid-cols-12 sm:py-20 sm:px-6 py-2 px-1 px-3"
+      >
+        <div class="text-context sm:col-span-7">
+          <p class="intro-text animate-fadeUp">Hi! I'm a</p>
+          <h1 class="main-text animate-slideUp sm:text-5xl text-4xl">
+            Frontend Developer
+          </h1>
+          <p class="sub-text animate-fade sm:text-2xl text-[16px]">
+            I create modern, clean, and fully responsive websites using HTML and
+            CSS.
+          </p>
+          <div
+            class="button-container animate-buttons flex items-center gap-6 sm:mt-10 py-10"
+          >
+            <a
+              href="#projects"
+              class="btn btn-project bg-[#4F46E5] text-white font-semibold"
+              >View Projects
+            </a>
+            <a href="#cta" class="btn btn-cta bg-transparent text-[#4F46E5]"
+              >Contact Me</a
+            >
+          </div>
+          <!-- Scroll Indicator -->
+          <div class="scroll-indicator absolute sm:block hidden">↓</div>
+        </div>
+        <div
+          class="visual-context h-[300px] sm:bg-none sm:col-span-5 relative flex justify-center mt-3 bg-[linear-gradient(135deg,#eef2ff_0%,#f0fdfa_100%)]"
+        >
+          <img
+            src="assets/profile.png"
+            alt="profile picture"
+            class="profile-img floating absolute sm:top-0.5 sm:right-2.5 sm:max-h-[400px] max-h-[300px]"
+          />
+        </div>
+      </div>
+
+      <div
+        class="about-section sm:mt-[120px] sm:mb-[92px] sm:mx-auto pt-6 mx-auto px-4"
+        id="about"
+      >
+        <div class="about-data flex flex-col sm:max-w-[90%]">
+          <div class="about-row-1">
+            <h2 class="about-text text-center mb-1">About Me</h2>
+            <p class="about-intro text-center mb-10">
+              My journey as a student Web-Developer
+            </p>
+          </div>
+
+          <div
+            class="about-row-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <div
+              class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                Who I Am
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                A passionate developer focused on building clean and scalable
+                solutions.
+              </p>
+            </div>
+            <div
+              class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                What I Build
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Responsive interfaces, backend systems, and modern web
+                applications.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:col-span-2 md:max-w-md md:mx-auto lg:col-span-1 lg:max-w-none"
+            >
+              <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                What I’m Learning
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Advanced React patterns, system design, and performance
+                optimization.
+              </p>
+            </div>
+          </div>
+          <div class="about-row-3"></div>
+        </div>
+      </div>
+
+      <div class="project-section pt-10" id="projects">
+        <h2 class="project-heading">Projects</h2>
+        <div
+          class="project-container grid sm:gap-y-10 gap-y-20 sm:px-30 px-4 py-5"
+        >
+          <div class="pr-row-1 grid sm:grid-cols-2 sm:gap-x-20 py-10 gap-y-4">
+            <div
+              class="pr-row-text-box bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="text-container">
+                <h2 class="text-xl font-semibold text-slate-900 mb-3">
+                  Omnifood
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Built a responsive marketing website for an AI-powered meal
+                  delivery platform. The design showcases features,
+                  testimonials, pricing plans, and a streamlined onboarding
+                  process to enhance user engagement.
+                </p>
+                <div class="live-link flex items-center gap-2 text-sm">
+                  <p class="text-slate-500 font-medium">Live Demo Link:</p>
+                  <a
+                    href="https://omnifood-npbadu.netlify.app/"
+                    target="_blank"
+                    class="text-green-600 font-medium hover:underline"
+                    >Omnifood</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pr-row-img-box">
+              <div class="img-container">
+                <img
+                  src="assets/project-img/omnifood.png"
+                  alt="Omnifood Website"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="pr-row-2 grid sm:grid-cols-2 sm:gap-x-20 gap-y-4">
+            <div class="pr-row-img-box">
+              <div class="img-container">
+                <img
+                  src="assets/project-img/lisbon-chair-shop.png"
+                  alt="Libson Chair Shop Website"
+                />
+              </div>
+            </div>
+            <div
+              class="pr-row-text-box bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="text-container">
+                <h2 class="text-xl font-semibold text-slate-900 mb-3">
+                  Libson Chair Shop
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Designed and developed a modern furniture landing page focused
+                  on product presentation, visual hierarchy, and
+                  conversion-driven layout. The project emphasizes clean UI,
+                  responsive design, and clear call-to-actions.
+                </p>
+                <div class="live-link flex items-center gap-2 text-sm">
+                  <p class="text-slate-500 font-medium">Live Demo Link:</p>
+                  <a
+                    href="https://libson-chair-shop.netlify.app/"
+                    target="_blank"
+                    class="text-green-600 font-medium hover:underline"
+                    >Libson Chair</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pr-row-3 grid sm:grid-cols-2 sm:gap-x-20 gap-y-4">
+            <div
+              class="pr-row-text-box bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="text-container">
+                <h2 class="text-xl font-semibold text-slate-900 mb-3">
+                  Authentication UI – Login & Signup Pages
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Designed a responsive authentication interface with Login and
+                  Sign Up pages, featuring clean form validation, smooth
+                  navigation, and a modern, user-friendly UI focused on
+                  accessibility and intuitive design.
+                </p>
+                <div class="live-link flex items-center gap-2 text-sm">
+                  <p class="text-slate-500 font-medium">Live Demo Link:</p>
+                  <a
+                    href="https://greenish-login-signup.netlify.app/"
+                    target="_blank"
+                    class="text-green-600 font-medium hover:underline"
+                    >Login & SignUp</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pr-row-img-box">
+              <div class="img-container">
+                <img
+                  src="assets/project-img/login.png"
+                  alt="Greenish theme login & signup page"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="pr-row-4 grid sm:grid-cols-2 sm:gap-x-20 gap-y-4">
+            <div class="pr-row-img-box">
+              <div class="img-container">
+                <img
+                  src="assets/project-img/cee-prep.png"
+                  alt="CEE Entrance Examination practice page"
+                />
+              </div>
+            </div>
+            <div
+              class="pr-row-text-box bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="text-container">
+                <h2 class="text-xl font-semibold text-slate-900 mb-3">
+                  CEE Entrance Preparation
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Designed and developed an interactive MBBS entrance
+                  preparation portal featuring structured subject-wise
+                  navigation, organized chapter modules, and a clean dark-themed
+                  UI for focused learning.
+                </p>
+                <div class="live-link flex items-center gap-2 text-sm">
+                  <p class="text-slate-500 font-medium">Live Demo Link:</p>
+                  <a
+                    href="https://puday-entrance-prep.netlify.app/"
+                    target="_blank"
+                    class="text-green-600 font-medium hover:underline"
+                    >CEE Entrance</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-section" id="skills"></div>
+      <div class="contact-section" id="cta"></div>
+      <footer></footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
