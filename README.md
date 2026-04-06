@@ -119,7 +119,7 @@ PORTFOLIO
 If you would like to connect or discuss opportunities:
 
 📧 Email: niteshprasadbadu@gmail.com  
-💼 LinkedIn: https://linkedin.com/in/nitesh-prasad-badu  
+💼 LinkedIn: https://www.linkedin.com/in/nitesh-prasad-badu-4bb183396/  
 🐙 GitHub: https://github.com/npbadu-dev
 
 ---
