@@ -6,8 +6,8 @@ A modern, clean, and fully responsive personal portfolio website built using **H
 
 ## 🚀 Live Demo
 
-🔗 Live Website: https://nitesh-prasad-badu.netlify.app/  
-📁 GitHub Repository: https://github.com/npbadu-dev/portfolio
+🔗 Live Website: https://personal-portfolio-nitesh.netlify.app/  
+📁 GitHub Repository: https://github.com/npbadu-dev/Portfolio
 
 ---
 
